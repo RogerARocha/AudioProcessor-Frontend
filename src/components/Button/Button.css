@@ -1,0 +1,12 @@
+.custom-button {
+    background-color: var(--primary-green);
+    color: var(--text-main);
+    border: none;
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+.custom-button:hover { opacity: 0.8; }

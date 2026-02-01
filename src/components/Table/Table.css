@@ -1,0 +1,71 @@
+.table-wrapper {
+    align-self: stretch;
+    border-radius: 12px;
+    background-color: var(--white);
+    border: 1px solid #d1e5d9;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.audio-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Cabeçalho da Tabela */
+.audio-table th {
+    background-color: var(--bg-main);
+    padding: 12px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-main);
+    line-height: 21px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Células da Tabela */
+.audio-table td {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--text-muted);
+    border-bottom: 1px solid var(--border-color);
+    vertical-align: middle;
+}
+
+/* Estilo específico para o nome do arquivo (cor preta conforme rascunho) */
+.audio-table td:first-child {
+    color: var(--text-main);
+    font-weight: 400;
+}
+
+/* Célula de Transcrição - Preview */
+.transcription-cell {
+    max-width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-style: italic;
+}
+
+/* Estilo do Link Direto */
+.link-btn {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.link-btn:hover {
+    color: var(--primary-green);
+    text-decoration: underline;
+}
+
+/* Ajuste de linha ao passar o mouse */
+.audio-table tr:hover td {
+    background-color: #f0f7f3;
+}
