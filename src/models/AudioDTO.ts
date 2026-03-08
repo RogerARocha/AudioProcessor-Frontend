@@ -3,6 +3,6 @@ export interface AudioDTO {
     fileName: string;
     fileType: string;
     fileUrl: string;
-    transcriptionPreview: string;
+    transcription: string;
     createdAt: string;
 }
